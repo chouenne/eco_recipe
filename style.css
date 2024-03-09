@@ -1,0 +1,559 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  color: white;
+  font-weight: 200;
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(58, 225, 58);
+  border: solid 1.5px rgb(58, 225, 58);
+  padding: 10px 20px;
+  text-transform: capitalize;
+  margin-top: 25px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: white;
+  border: solid 2px white;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  transition: 0.5s;
+}
+
+.burger {
+  color: white;
+}
+
+.has-bg {
+  background: rgba(14, 58, 14, 0.5);
+}
+
+.main-header img {
+  width: 40px;
+}
+
+.main-header a:hover {
+  color: rgb(23, 107, 23);
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  text-transform: capitalize;
+}
+
+.list {
+  text-transform: uppercase;
+}
+
+.hero {
+  height: 90vh;
+  background: url(image/hero.jpg) rgba(16, 16, 16, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.burger {
+  display: none;
+}
+
+.burger i:hover {
+  color: rgb(58, 225, 58);
+}
+
+.hero p {
+  color: white;
+}
+
+.text-box {
+  text-align: center;
+  width: 500px;
+  max-width: 60%;
+}
+
+.menu-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: -130px;
+}
+
+.menu h3 {
+  color: white;
+}
+
+.menu i {
+  color: rgba(255, 255, 255, 0.715);
+}
+
+.menu-flex .image1 {
+  background: url(https://www.powellfamilycooking.com/wp-content/uploads/2021/03/poke-bowl-with-spicy-sauce.jpg)
+    rgba(16, 16, 16, 0.3);
+}
+
+.menu-flex .image2 {
+  background: url(image/drinks.jpg) rgba(16, 16, 16, 0.3);
+}
+
+.menu-flex .image3 {
+  background: url(image/snacks.jpg) rgba(16, 16, 16, 0.3);
+}
+
+.menu-flex .image {
+  width: calc((100% - 30px) / 3);
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: overlay;
+  border: white solid 5px;
+}
+
+.menu-info {
+  text-align: center;
+}
+
+.recipes p {
+  text-align: center;
+}
+
+.recipes .recipes-tb {
+  text-align: center;
+}
+
+.recipes-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 60px;
+}
+
+.btn-recipes {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.btn-recipes:hover {
+  color: rgb(114, 172, 114);
+}
+
+.recipes .card {
+  width: calc((100% - 75px) / 6);
+}
+
+.recipes-flex .image {
+  height: 130px;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.recipes .card .image1 {
+  background-image: url(https://ichisushi.com/wp-content/uploads/2022/07/Sushi-Pizza.jpg);
+}
+
+.recipes-flex .image2 {
+  background-image: url(https://scm-assets.constant.co/scm/unilever/e9dc924f238fa6cc29465942875fe8f0/8d05c179-d87b-4501-a24c-004d9788e09f.jpg);
+}
+
+.recipes-flex .image3 {
+  background-image: url(https://www.wardvillage.com/wp-content/uploads/2017/04/image-Lets-Roll-6-Types-of-Sushi-Explained-1-blog.jpg.png);
+}
+
+.recipes-flex .image4 {
+  background-image: url(https://www.lecremedelacrumb.com/wp-content/uploads/2019/06/one-pan-shrimp-asparagus-4.jpg);
+}
+
+.recipes-flex .image5 {
+  background-image: url(https://tastesbetterfromscratch.com/wp-content/uploads/2016/01/Asian-Chicken-Salad-2.jpg);
+}
+
+.recipes-flex .image6 {
+  background-image: url(https://sodelicious.recipes/wp-content/uploads/2018/10/13.07.2018-R-3-lat-38-sushi-burger-Avocado-and-Salmon-Sushi-Burger-1200x900.jpg);
+}
+
+.cta {
+  padding: 40px 0;
+  background: url(image/cta.jpg) rgba(84, 84, 84, 0.8);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  text-align: center;
+}
+
+.cta h2 {
+  color: rgb(250, 253, 250);
+}
+
+.cta p {
+  color: white;
+}
+
+.btn-cta {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(253, 247, 247);
+  background-color: rgb(114, 172, 114);
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.btn-cta:hover {
+  color: rgb(7, 79, 7);
+  background-color: white;
+}
+
+.btn-recipes {
+  color: gray;
+}
+
+.bestseller-flex {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+.bestseller h2 {
+  text-align: left;
+}
+
+.bestseller h3 {
+  color: white;
+}
+
+.right-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.left-flex {
+  display: flex;
+  gap: 15px;
+}
+
+.bestseller i {
+  background: rgb(114, 172, 114);
+  color: white;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.bestseller i:hover {
+  background-color: black;
+}
+
+.bestseller-flex .image1 {
+  background: url(https://www.tastingtable.com/img/gallery/oatmeal-brands-ranked-from-worst-to-best/l-intro-1649785886.jpg)
+    rgba(84, 84, 84, 0.8);
+}
+
+.bestseller-flex .image2 {
+  background: url(https://www.31daily.com/wp-content/uploads/2021/04/md-100-Whole-Wheat-Bread-11-1-of-1-scaled.jpg)
+    rgba(84, 84, 84, 0.8);
+}
+
+.bestseller-flex .image3 {
+  background: url(https://cdn.britannica.com/59/236459-050-7A9920E6/Raw-homemade-spaghetti-nests-on-a-wooden-table.jpg)
+    rgba(84, 84, 84, 0.8);
+}
+
+.bestseller-flex .image {
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 250px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+}
+
+.footer h5 {
+  text-align: center;
+  font-weight: 200;
+  margin-top: 100px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer {
+  background-color: rgb(231, 239, 231);
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer01 {
+  width: 40%;
+}
+
+.footer01 ul {
+  margin-top: 10px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer li {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.icon-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.footer02 ul {
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 992px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .bestseller h3 {
+    max-width: 150px;
+    text-align: center;
+  }
+
+  .recipes-flex {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .burger {
+    display: block;
+    color: white;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .recipes .card {
+    width: calc((100% - 30px) / 3);
+  }
+
+  .recipes-flex .image {
+    height: 150px;
+    margin-bottom: 5px;
+  }
+
+  .bestseller-flex {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .right-flex {
+    gap: 10px;
+  }
+
+  .bestseller .left-flex {
+    justify-content: center;
+  }
+
+  .bestseller .right .image {
+    width: calc((100%- 20px) / 3);
+    height: 150px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .bestseller .left {
+    text-align: center;
+  }
+
+  .bestseller h2 {
+    text-align: center;
+  }
+
+  .bestseller .left-flex {
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer03 ul {
+    text-align: center;
+  }
+
+  .footer-flex {
+    flex-wrap: wrap;
+  }
+
+  .footer01,
+  .footer02,
+  .footer03,
+  .footer04 {
+    width: 100%;
+  }
+
+  .footer03 .strong {
+    color: gray;
+  }
+
+  .footer01 ul {
+    text-align: center;
+  }
+
+  .footer04 .icon-flex {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .menu-flex {
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .menu-flex .image {
+    width: 100%;
+  }
+
+  .recipes-flex {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .recipes .card {
+    width: calc((100% - 10px) / 2);
+  }
+
+  .bestseller .right-flex {
+    flex-wrap: wrap;
+  }
+
+  .bestseller .image {
+    width: 100%;
+  }
+}
